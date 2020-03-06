@@ -16,5 +16,4 @@ public class UserDtoConverter {
                 .roles(entity.getRoles().stream().map(UserRole::name).collect(Collectors.toSet()))
                 .build();
     }
-
 }

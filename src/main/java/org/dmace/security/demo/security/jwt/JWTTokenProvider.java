@@ -39,6 +39,7 @@ public class JWTTokenProvider {
                 .setIssuedAt(new Date())
                 .setExpiration(tokenExpirationDate)
                 .claim("fullname", user.getFullName())
+				.claim("email", user.getEmail())
                 .claim("roles", user.getRoles().stream()
                         .map(UserRole::name)
                         .collect(Collectors.joining(", "))

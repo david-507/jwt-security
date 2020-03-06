@@ -9,6 +9,7 @@ import java.util.Set;
 @AllArgsConstructor
 @Builder
 public class GetUserDTO {
+    private String email;
     private String username;
     private String avatar;
     private Set<String> roles;
